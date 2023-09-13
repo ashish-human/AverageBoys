@@ -1,4 +1,4 @@
-# Spring social 2 Cloud
+# Green Grapes
 
 Goal of the application is to create secured Spring Web application, that enables sign in via Oauth2 (github) and Oidc (google) providers.
 
