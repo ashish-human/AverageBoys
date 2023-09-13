@@ -56,7 +56,10 @@
             <artifactId>liquibase-core</artifactId>
         </dependency>
         <!--END DATABASE-->
-
+	    <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-devtools</artifactId>
+	    </dependency>
         <!--TEST CONTAINERS-->
         <dependency>
             <groupId>org.testcontainers</groupId>

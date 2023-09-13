@@ -16,13 +16,17 @@ import org.springframework.security.oauth2.client.userinfo.OAuth2UserService;
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.util.matcher.RequestMatcher;
 
 @Configuration
 @Log4j2
 public class SecurityConfiguration {
 
 
-    @Bean
+    private String[] permit_all = {"/", "/login", "/user/sign-up", "/error"};
+
+
+	@Bean
     @Order(0)
     SecurityFilterChain resources(HttpSecurity http) throws Exception {
         return http
@@ -56,7 +60,7 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests(c -> c
                         .requestMatchers(EndpointRequest.to("info", "health", "prometheus")).permitAll()
                         .requestMatchers(EndpointRequest.toAnyEndpoint().excluding("info", "health", "prometheus")).hasAuthority("manage")
-                        .requestMatchers("/", "/login", "/user/sign-up", "/error").permitAll()
+                        .requestMatchers(permit_all ).permitAll()
                         .anyRequest().authenticated()
                 )
                 .build();
