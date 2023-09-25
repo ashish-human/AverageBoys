@@ -1,0 +1,29 @@
+<div data-th-fragment="top_tabs(classList)">
+	<div class="ui top attached tabular menu classtabs">
+		<a class="item active" data-tab="all">All</a>
+		<a class="item" data-tab="fit">Fit For You</a>
+		<a class="item" data-tab="my">My Journey</a>
+		<a class="item" data-tab="upcoming">Up Coming</a>
+	</div>
+	<div class="ui bottom attached tab segment active" data-tab="all">
+		<div data-th-replace="~{products/average-boys/fragments/display_classeslist::display_classes(${classList})}">
+		</div>
+	</div>
+	<div class="ui bottom attached tab segment" data-tab="fit">
+		<div data-th-with="classListFit=${classList.?[courseCode eq 'dsa']}">
+		<!--	[[${classListFit}]]-->
+		
+			<div
+				data-th-replace="~{products/average-boys/fragments/display_classeslist::display_classes(${classListFit})}">
+			</div>
+		</div>
+	</div>
+	<div class="ui bottom attached tab segment" data-tab="my">
+		<div data-th-replace="~{products/average-boys/fragments/display_classeslist::display_classes(${classList})}">
+		</div>
+	</div>
+	<div class="ui bottom attached tab segment" data-tab="upcoming">
+		<div data-th-replace="~{products/average-boys/fragments/display_classeslist::display_classes(${classList})}">
+		</div>
+	</div>
+</div>

@@ -1,0 +1,30 @@
+<div class="ui link cards centered" data-th-fragment="display_classes(classList))">
+
+			<div class="card" data-th-each="course : ${classList}" data-th-object=${course}
+				data-th-onclick="|window.location.href='@{/products/averageboys/{courseCode}(code=${course.id}, courseCode=${course.courseCode})}'|" >
+                <div class="image">
+                    <img src="/images/spring_social_2_cloud_part_3_oauth2.jpg">
+                </div>
+                <div class="content">
+                    <div class="header" data-th-text="*{title}">OAuth2 sign in</div>
+                    <div class="meta">
+                       Level <a data-th-text="*{levelInYears}"></a>
+                       Author: <a data-th-text="*{author.name}"></a>
+                    </div>
+                    <div class="description" data-th-text="*{shortDescription}"></div>
+                </div>
+                <div class="extra content">
+                    <div class="center aligned meta">
+                       
+                    </div>
+                </div>
+                
+                 <div class="ui button">
+				      <i class="add icon"></i>
+				      Details
+				    </div>
+            </div>
+	
+</div>
+        
+        
