@@ -1,0 +1,49 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<div class="ui padded basic segment" data-th-fragment="bottom_menu_fragment">
+<footer>
+    <div class="ui padded basic segment" style="column-count: 5">
+
+        <h1>Technology</h1>
+        <ul>
+            <li><a th:href="java">J2EE</a></li>
+            <li><a th:href="spring">Springboot</a></li>
+            <li><a th:href="rdbms">MySQL</a></li>
+            <li><a th:href="react">React</a></li>
+            <li><a th:href="nosql">MongoDB</a></li>
+        </ul>
+        <h1>Company</h1>
+    <nav>
+        <ul>
+            <li><a th:href="@{/about}">About Us</a></li>
+            <li><a th:href="@{/career}">Careers</a> </li>
+            <li><a th:href="@{/contact}">Contact Us</a></li>
+            <li><a th:href="@{/privacy}">Privacy Policy</a></li>
+        </ul>
+        <h1>Product</h1>
+        <ul>
+            <li><a th:href="@{averageBoys}">AverageBoys</a></li>
+            <li><a th:href="@{abc}">Abc</a> </li>
+        </ul>
+        <h1>Partners</h1>
+        <ul>
+            <li><a th:href="@{/xyz}">XYZ</a></li>
+            <li><a th:href="@{/pqr}">PQR</a></li>
+            <li><a th:href="@{/stv}">STV</a></li>
+        </ul>
+        <h1>Services</h1>
+        <ul>
+            <li><a th:href="@{app-life-mgmt}">Application Lifecycle Management</a></li>
+            <li><a th:href="@{data-mgmt}">Data Management</a></li>
+            <li><a th:href="@{it-service}">IT service Management</a></li>
+            <li><a th:href="@{qa-testing}">QA & Testing</a></li>
+        </ul>
+    </nav>
+    </div>
+</footer>
+</div>
+</body>
+</html>

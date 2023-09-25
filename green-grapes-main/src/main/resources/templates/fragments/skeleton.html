@@ -13,10 +13,15 @@
 <body>
 <div class="ui container">
     <!--  TOP MENU-->
-    <div data-th-replace="~{fragments/menu::top_menu(${activeMenu})}"></div>  
+    <div data-th-replace="~{fragments/menu::top_menu(${activeMenu})}"></div>
+
     <!--<div data-th-insert="$(menu_content(${activeMenu}))"></div>-->
     <!--  CONTENT-->
     <div data-th-insert="${content}"></div>
+    <div data-th-replace="~{fragments/menu::bottom_menu(${activeMenu})}"></div>
+
+    <div data-th-replace="~{fragments/bottom_menu_fragment::bottom_menu_fragment}"></div>
+
 
     <script data-th-if="${toast}" data-th-inline="javascript">
         $.toast({
