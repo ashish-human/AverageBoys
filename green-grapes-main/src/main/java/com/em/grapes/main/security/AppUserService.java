@@ -208,6 +208,7 @@ public class AppUserService implements UserDetailsManager {
                 .builder()
                 .provider(LoginProvider.APP)
                 .username(user.getUsername())
+                .email(user.getUsername())
                 .password(user.getPassword())
                 .authorities(user.getAuthorities())
                 .build());

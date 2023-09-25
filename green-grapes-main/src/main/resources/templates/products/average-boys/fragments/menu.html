@@ -1,6 +1,6 @@
 <div class="ui padded basic segment" data-th-fragment="top_menu(activeMenu)">
   <div class="ui large secondary pointing menu">
-    <a class="item" data-th-href="@{/products/averageboys}" data-th-classappend="${(activeMenu eq 'averageboys') ? 'active' : ''}">Classes</a>
+    <a class="item" data-th-href="@{/products/averageboys}" data-th-classappend="${(activeMenu eq 'courses') ? 'active' : ''}">Courses</a>
     <a class="item" data-th-href="@{/products/averageboys/about}" data-sec-authorize="isAuthenticated()" data-th-classappend="${(activeMenu eq 'about') ? 'active' : ''}">About</a>
     <div class="center aligned header item">
       <h1 style="color:#50b33a">Average Boys</h1>

@@ -1,25 +1,28 @@
-<div class="ui link cards" data-th-fragment="display_classes(classList))">
-	
-	
-			<div class="card" data-th-each="course : ${classList}">
+<div class="ui link cards centered" data-th-fragment="display_classes(classList))">
+
+			<div class="card" data-th-each="course : ${classList}" data-th-object=${course}
+				data-th-onclick="|window.location.href='@{/products/averageboys/{courseCode}(code=${course.id}, courseCode=${course.courseCode})}'|" >
                 <div class="image">
                     <img src="/images/spring_social_2_cloud_part_3_oauth2.jpg">
                 </div>
                 <div class="content">
-                    <div class="header" data-th-text="${course.title}">OAuth2 sign in</div>
+                    <div class="header" data-th-text="*{title}">OAuth2 sign in</div>
                     <div class="meta">
-                       Level <a data-th-text="${course.levelInYears}"></a>
+                       Level <a data-th-text="*{levelInYears}"></a>
+                       Author: <a data-th-text="*{author.name}"></a>
                     </div>
-                    <div class="description" data-th-text="${course.shortDescription}"></div>
+                    <div class="description" data-th-text="*{shortDescription}"></div>
                 </div>
                 <div class="extra content">
                     <div class="center aligned meta">
-                        <a href="https://youtu.be/40BxatEr5aE" target="_blank"><i class="ui youtube icon"></i></a>
+                       
                     </div>
                 </div>
-                <form class="ui form" method="POST" action="@{/enroll}">
-                	<input type="submit" value="Enroll" />
-                </form>
+                
+                 <div class="ui button">
+				      <i class="add icon"></i>
+				      Details
+				    </div>
             </div>
 	
 </div>

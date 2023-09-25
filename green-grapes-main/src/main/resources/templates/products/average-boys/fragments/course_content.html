@@ -1,0 +1,6 @@
+<div data-th-fragment="course_content(chapters)">
+	<span>Course Content: [[${chapters.size()}]] Chapters </span>
+	<div data-th-each="chapter,iter : ${chapters}"> 
+		<div data-th-replace="~{products/average-boys/fragments/course_content_table::course_content_table(${chapter}, ${iter})}"></div>
+	</div>
+</div>

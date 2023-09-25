@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml" data-th-replace="~{products/average-boys/fragments/skeleton::layout('courses',  ~{::#home_content})}">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+   
+</head>
+<body>
+<div id="home_content" class="ui container">
+    <div class="ui padded segment">
+        <div data-th-replace="~{products/average-boys/fragments/coursedetails::display_coursedetails(${activeClass})}"></div>
+    </div> 
+</div>
+</body>
+</html>
