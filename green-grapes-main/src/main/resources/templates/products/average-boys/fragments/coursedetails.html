@@ -1,0 +1,25 @@
+<div data-th-fragment="display_coursedetails(course)">
+
+
+	<div class="card">
+
+		<div class="two-column">
+			<div class="element image"> <img src="/images/spring_social_2_cloud_part_3_oauth2.jpg"> </div>
+			<div class="element">
+				<div class="meta">
+					Level <a data-th-text="${course.levelInYears}"></a><br/>
+					Author: <a data-th-text="${course.author.name}"></a>
+				</div>
+			</div>
+		</div>
+
+		<hr />
+
+		<div
+			data-th-replace="~{products/average-boys/fragments/course_content::course_content(${course.courseContent.chapters})}">
+		</div>
+
+	</div>
+
+
+</div>

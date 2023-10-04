@@ -76,9 +76,10 @@ public class AppUserController {
     }
 
     record SignUpForm(
-
+    		@NotBlank
+    		String name,
             @NotBlank
-            String username,
+            String email,
             @Size(min = 4, message = "password must have a minimum of {min} characters")
             String password
     ) {
@@ -99,8 +100,8 @@ public class AppUserController {
         }
 
         try {
-            appUserService.createUser(signUpForm.username, signUpForm.password);
-            attributes.addFlashAttribute("toast", Toast.success("User sign up", "User " + signUpForm.username + " was created"));
+            appUserService.createUser(signUpForm.email, signUpForm.password);
+            attributes.addFlashAttribute("toast", Toast.success("User sign up", "User " + signUpForm.email + " was created"));
             return "redirect:/login";
         } catch (Exception e) {
             attributes.addFlashAttribute("toast", Toast.error("User sign up", e.getMessage()));

@@ -1,0 +1,36 @@
+:root {
+	/*Ttext*/
+	 --primary-text-color: brown;
+	 --secondary-text-color: brown;
+	
+	 --primary-selected-text-color: rgb(255, 255, 255);
+	 --secondary-selected-text-color: brown;
+	
+	 --primary-hover-text-color: brown;
+	 --secondary-hover-text-color: brown;
+	
+	/*Background*/ 
+	 --main-bg-color: rgb(128, 128, 128);
+	 
+	 --no-bg-color: rgb(255, 255, 255);
+	
+	 --primary-bg-color: rgb(128, 255, 128);
+	 --secondary-bg-color: brown;
+	
+	 --primary-selected-bg-color: brown;
+	 --secondary-selected-bg-color: brown;
+	
+	 --primary-hover-bg-color: rgb(174, 255, 174);
+	 --secondary-hover-bg-color: brown;
+	
+	/*Font-size*/
+	--top-level-banner-font-size: xx-large;
+	--second-level-banner-font-size: x-large;
+	--third-level-banner-font-size: large;
+	
+	--top-level-element-font-size: large;
+	--second-level-element-font-size: large;
+	--third-level-element-font-size: large;
+	
+	--button-font-size:large;
+}
