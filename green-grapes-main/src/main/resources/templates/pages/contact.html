@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" data-th-replace="~{fragments/skeleton::layout('contact',~{::#contact_us_content})}">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <!-- Add your CSS styles here or link to an external stylesheet -->
+</head>
+<body>
+<div class="contact_us" id="contact_us_content" style="column-count: 2">
+    <div class="element">
+        <div  data-th-replace="~{fragments/contact_us_fragment}"></div>
+    </div>
+    <div class="element" >
+        <img class="eighty" data-th-src="@{/images/contactUs3.jpg}">
+    </div>
+</div>
+
+
+</body>
+</html>

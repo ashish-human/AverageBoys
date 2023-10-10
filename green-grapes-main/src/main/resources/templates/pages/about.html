@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" data-th-replace="~{fragments/skeleton::layout('about_us',~{::#about_us_content})}">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <!-- Add your CSS styles here or link to an external stylesheet -->
+</head>
+<body>
+<!-- Include a common header if needed -->
+<div class="about-section" id="about_us_content" style="column-count: 2">
+    <div class="element">
+        <h1>About Our Company</h1>
+        <p>
+            Welcome to our "About Us" page. Here, you can learn more about our company's history, mission, and values.
+        </p>
+
+<!--        <h2>Our History</h2>-->
+<!--        <p>-->
+<!--            Briefly describe your company's history, including when it was founded and any significant milestones.-->
+<!--        </p>-->
+
+<!--        <h2>Our Mission</h2>-->
+<!--        <p>-->
+<!--            Explain your company's mission and the goals you aim to achieve.-->
+<!--        </p>-->
+
+        <h2>Our Team</h2>
+        <ul>
+            <li>John Doe - CEO</li>
+            <li>Jane Smith - CTO</li>
+            <li>Michael Johnson - CFO</li>
+            <!-- Add more team members as needed -->
+        </ul>
+    </div>
+    <div class="element">
+        <img class="eighty" data-th-src="@{/images/aboutUs.jpg}">
+    </div>
+</div>
+
+<!-- Include a common footer if needed -->
+</body>
+</html>

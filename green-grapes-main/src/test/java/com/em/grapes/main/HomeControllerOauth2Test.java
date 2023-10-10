@@ -8,7 +8,7 @@ import org.springframework.security.oauth2.core.user.DefaultOAuth2User;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.em.grapes.main.HomeController;
+import com.em.grapes.main.controllers.HomeController;
 
 import java.util.Collections;
 

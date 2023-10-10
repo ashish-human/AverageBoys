@@ -1,0 +1,19 @@
+body{
+
+}
+.multi-column {
+    column-count: 4;
+}
+
+.multi-column .element {
+    break-inside: avoid;
+}
+.element{
+    break-inside: avoid;
+}
+img.seventyFive{
+    width: 75%;
+}
+img.eighty{
+    width: 80%;
+}

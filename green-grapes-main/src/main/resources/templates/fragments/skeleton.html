@@ -8,15 +8,22 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" data-th-href="@{/app.css}">
+    <link rel="stylesheet" type="text/css" data-th-href="@{/css/home.css}">
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.js"></script>
 </head>
 <body>
 <div class="ui container">
+    <div data-th-replace="~{fragments/company_icon::company_icon}"></div>
     <!--  TOP MENU-->
-    <div data-th-replace="~{fragments/menu::top_menu(${activeMenu})}"></div>  
+    <div data-th-replace="~{fragments/menu::top_menu(${activeMenu})}"></div>
+
     <!--<div data-th-insert="$(menu_content(${activeMenu}))"></div>-->
     <!--  CONTENT-->
     <div data-th-insert="${content}"></div>
+<!--    <div data-th-replace="~{fragments/menu::bottom_menu_fragment(${activeMenu})}"></div>-->
+
+    <div data-th-replace="~{fragments/bottom_menu_fragment::bottom_menu_fragment}"></div>
+
 
     <script data-th-if="${toast}" data-th-inline="javascript">
         $.toast({
