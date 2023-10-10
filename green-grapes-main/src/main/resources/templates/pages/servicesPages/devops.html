@@ -1,0 +1,38 @@
+
+<html xmlns:th="http://www.thymeleaf.org" data-th-replace="~{fragments/skeleton::layout('devops',~{::#devops_content})}">
+<head>
+    <meta charset="UTF-8">
+    <title>Devops</title>
+</head>
+<body>
+<div id="devops_content" class="ui container" style="column-count: 2">
+    <div class="element">
+        <h1>What is the current trend of DevOps?</h1>
+        <p style="font-size: 20px">
+            GitOps is one of the most widely used DevOps trends that enables enterprises to control and automate infrastructure. As a Kubernetes-based paradigm, it gives IT operation managers and developers the ability to utilize Git for amalgamating and deploying numerous applications.
+        </p>
+    </div>
+
+    <div class="element">
+        <h1>Which DevOps is in demand?</h1>
+        <p style="font-size: 20px">
+            The top DevOps trends that are in demand in 2023 are listed below:
+        </p>
+        <ul>
+            <li style="font-size: 16px">DevSecOps</li>
+            <li style="font-size: 16px">Kubernetes</li>
+            <li style="font-size: 16px">Microservice Architecture</li>
+            <li style="font-size: 16px">Serverless Computing</li>
+            <li style="font-size: 16px">Low Code Applications</li>
+            <li style="font-size: 16px">AIOps</li>
+            <li style="font-size: 16px">GitOps</li>
+        </ul>
+    </div>
+    <div class="element">
+        <img class="eighty" data-th-src="@{/images/devops.jpg}">
+    </div>
+</div>
+
+
+</body>
+</html>

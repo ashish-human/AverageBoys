@@ -1,4 +1,4 @@
-package com.em.grapes.main;
+package com.em.grapes.main.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,12 +12,6 @@ public class HomeController {
     public String home(@RequestParam(name = "logout", required = false, defaultValue = "true") boolean logout) {
         return "index";
     }
-
-    @GetMapping("/about")
-    public String aboutUsPage(){
-        return "pages/about";
-    }
-    
 
     @GetMapping("/login")
     String login() {

@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
+    <style>
+        body {
+            background-image: url('static/images/mission-awpem.jpg'); /* Replace with the actual image path */
+            background-size: cover; /* Adjust the background size as needed */
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Optional: Fixed background */
+        }
+
+        /* Add any other custom styles here */
+    </style>
 </head>
 <body>
 <div id="home_content" class="ui container">
@@ -11,7 +21,7 @@
         <div class="ui info message" data-th-if="${param.logout}">
             <p>You have been successfully logged out!</p>
         </div>
-        <div data-th-replace="~{fragments/our_mission::our_mission}"></div>
+        <div data-th-replace="~{fragments/our_mission::our_mission }"></div>
         <div data-th-replace="~{fragments/who_we::who_we_are}"></div>
         <div data-th-replace="~{fragments/about_us::about_us}"></div>
         <div data-th-replace="~{fragments/shivtechsoftians::shivtechsoftians}"></div>
