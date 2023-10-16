@@ -23,7 +23,7 @@ import org.springframework.security.web.util.matcher.RequestMatcher;
 public class SecurityConfiguration {
 
 
-    private String[] permit_all = {"/", "/login", "/user/sign-up", "/error"};
+    private String[] permit_all = {"/", "/login", "/user/sign-up", "/error", "/lib/**"};
 
 
 	@Bean

@@ -1,9 +1,16 @@
 :root {
+	
+	/*color;*/
+	 --primary-color:#994e78;
+	 
+	
+	
 	/*Ttext*/
+	--text-color:#071f42!important;
 	 --primary-text-color: brown;
 	 --secondary-text-color: brown;
 	
-	 --primary-selected-text-color: rgb(255, 255, 255);
+	 --primary-ligh-text-color: rgb(255, 255, 255);
 	 --secondary-selected-text-color: brown;
 	
 	 --primary-hover-text-color: brown;
@@ -11,17 +18,19 @@
 	
 	/*Background*/ 
 	 --main-bg-color: rgb(128, 128, 128);
+	  --main-light-bg-color: rgb(128, 128, 128);
 	 
 	 --no-bg-color: rgb(255, 255, 255);
 	
-	 --primary-bg-color: rgb(128, 255, 128);
+	 --primary-bg-color: rgba(0,0,30)!important;
 	 --secondary-bg-color: brown;
 	
-	 --primary-selected-bg-color: brown;
-	 --secondary-selected-bg-color: brown;
+	 --primary-light-bg-color: brown;
+	 --secondary-light-bg-color: brown;
+	 
+	  --secondary-bg-color:#0d1f68;
+	 --primary-light-bg-color: brown;
 	
-	 --primary-hover-bg-color: rgb(174, 255, 174);
-	 --secondary-hover-bg-color: brown;
 	
 	/*Font-size*/
 	--top-level-banner-font-size: xx-large;
@@ -33,4 +42,8 @@
 	--third-level-element-font-size: large;
 	
 	--button-font-size:large;
+	
+	
+	
+	--white: #fff;
 }

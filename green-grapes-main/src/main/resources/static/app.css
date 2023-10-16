@@ -1,4 +1,352 @@
-   body {
-      background-color: #f5f5f5;
-      
-   }
+body {
+	color: rgb(153 78 120)!important;
+	font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+}
+   
+button, input[type=button] {
+	outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.white-text {
+	color: var(--white);
+}
+.purple-text {
+	color: #8f0050;
+}
+.main-container {
+	display: inline-block;
+}
+   
+/*home page*/
+.top-secondary-header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgba(0,0,58,0.99)!important;
+    line-height: 1em;
+    padding-top: 0.6em;
+    /* padding-bottom: 0.7em;*/
+    font-size: small;
+   /* height:1.5em;*/
+   z-index: 2;
+}
+.top-secondary-menu {
+ float: right;	
+ width: 27%;
+}
+.top-secondary-nav, .top-secondary-nav li {
+	display: inline-block;
+	
+}
+.top-secondary-nav li {
+	margin-right: 15px;
+	position: relative;
+    text-align: right;
+}
+
+.top-secondary-menu>ul>li a {
+   color: #fff;
+    display: block;
+    font-weight: 600;
+}
+header {
+    position: fixed;
+    height: 91px;
+    width: 100%;
+    z-index: 3;
+    background-color: #fff;
+
+}
+logo-container {
+	position: absolute;
+    height: 100%;
+    width: 100%;
+}
+/*@media (max-width: 980px)
+#logo {
+    max-width: 50%;
+}
+*/
+.top-menu-container {
+	line-height: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+.top-menu-container li a {
+    font-size: 16px;
+}
+.logo-container {
+    height: 100%;
+    width: 100%;
+}
+#logo {
+	width: auto;
+    t-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    margin-bottom: 0;
+    max-height: 100%;
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+}
+
+.header-right ul {
+    list-style: none;
+}
+
+.header-right ul li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+.header-right ul li a {
+    text-decoration: none;
+    color: #000; 
+}
+
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+    }
+
+    .header-left,
+    .header-right {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .header-right ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+a, abbr, acronym, address, applet, b, big, blockquote, body, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, u, ul, var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color:white;
+}
+/* top menu drop dowm*/
+.top-menu-dropbtn {
+  background-color: #fff;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.top-menu-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.top-menu-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 199;
+}
+
+.top-menu-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.top-menu-dropdown:hover .top-menu-dropdown-content {display: block;}
+
+/* top menu drop dowm*/
+
+.menu-button {
+  background-color: rgb(153 78 120)!important;
+  padding: 6px 16px;
+  font-size: 16px;
+  color: white;
+  border: none;
+}
+.menu-button a {
+	color: white;
+}
+
+.menu-button:hover {
+	background-color: rgb(153 78 120 / 80%)!important;
+}
+
+/*carousel*/
+.carousel-div {
+	top: 121px;
+    position: absolute;
+    height: 400px;
+    background-color:rgb(13 31 104)!important;
+    width: 100%;
+    z-index: -1;
+}
+
+.carousel-item {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item-content {
+	height: 100%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item-content img {
+    height: 100%;
+}
+
+
+/*-------------*/
+
+.two-column-container{
+	top: 700px;
+	position: relative;
+	height: 300px;
+}
+
+.two-column-container-mission{
+	top: 600px;
+	position: relative;
+	height: 300px;
+}
+
+.two-column-container-content{
+	height: 100%;
+    color:var(--white);
+    display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.two-column-container-content img {
+	height: auto;
+}
+
+.two-column-container-content p
+{
+	font-size: 1.5em;
+}
+
+/*-----------*/
+.two-column-container-culture {
+	position: relative;
+	height: 400px;
+	top: 850px;
+}
+
+.two-column-container-about-us {
+	position: relative;
+	height: 500px;
+	top: 750px;
+}
+
+/*services*/
+.services {
+	position: relative;
+    top: 630px;
+    color: #000;
+}
+
+.center-text{
+	text-align: center;
+}
+.card-img-top-services {
+	padding: 10px 0 0 10px;
+}
+
+.services-card {
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.services-hr {
+	background-color: rgb(153 78 120)!important;
+    height: 4px;
+    border: none;
+    margin-top: 0;
+}
+
+.content-text-no-bg{
+	color:var(--text-color);
+}
+
+.content-text{
+	color:var(--white);
+}
+
+.primary-text {
+	color: var(--text-color);
+}
+.secondary-bg {
+	background-color: var(--secondary-bg-color);
+}
+.our-culture {
+	position: relative;
+    top: 900px;
+}
+.culture-group {
+	display: flex;
+    justify-content: space-evenly;
+}
+.culture-card {
+	align-items: center;
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+	color:#000;
+}
+.card-img-top-culture {
+	padding: 30px 50px 0 50px;
+}
+.careers {
+	position:relative;
+	top: 950px;
+}
+
+.contact-us {
+	position:relative;
+	top: 1040px;
+	color:#000;
+}
+
+.two-column-container-location {
+	position:relative;
+	top: 1040px;
+}
+
+.vertical-line {
+	border-left: 6px solid var( --primary-color);
+  	height: 203px;
+}
+footer {
+	background-color: #0d1f68;
+    height: 500px;
+    position: relative;
+    top: 1200px;
+}
+.white-text {
+	color: var(--white);
+}
+/* #about-us, #life-at, #Services {}*/
