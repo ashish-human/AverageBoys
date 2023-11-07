@@ -1,0 +1,25 @@
+.top-header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgba(0,0,58,0.99)!important;
+    line-height: 1em;
+}
+    
+.multi-column {
+    column-count: 4;
+}
+
+.multi-column .element {
+    break-inside: avoid;
+}
+.element{
+    break-inside: avoid;
+}
+img.seventyFive{
+    width: 75%;
+}
+img.eighty{
+    width: 80%;
+}

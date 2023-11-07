@@ -10,4 +10,6 @@ public interface ConstantPaths {
 	
 	
 
+	String about_us = "pages/about";
+
 }

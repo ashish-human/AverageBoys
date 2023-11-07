@@ -1,87 +1,686 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml" data-th-replace="~{fragments/skeleton::layout('home',  ~{::#home_content})}">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Welcome</title>
+	<meta name="viewport" content="width=1050">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+	<link rel="stylesheet" type="text/css" media="all" data-th-href="@{/var.css}" />
+	<link rel="stylesheet" type="text/css" media="all" data-th-href="@{/app.css}" />
+	<link rel="stylesheet" type="text/css" media="all" data-th-href="@{/css/home.css}" />
+	<link rel="stylesheet" type="text/css" media="all" data-th-href="@{/lib/bootstrap.min.css}"
+		crossorigin="anonymous" />
+	<script data-th-src="@{/lib/jquery.min.js}" crossorigin="anonymous"></script>
+	<script data-th-src="@{/lib/bootstrap.min.js}" crossorigin="anonymous"></script>
+	<script data-th-src="@{/lib/flickity.pkgd.min.js}" crossorigin="anonymous"></script>
+	<title>Shiv Tech Soft</title>
 </head>
+
 <body>
-<div id="home_content" class="ui container">
-    <div class="ui padded segment">
+	<div class="top-secondary-header">
+		<div class="top-secondary-menu">
+			<ul class="top-secondary-nav">
+				<li><a href="#">Blogs</a></li>
+				<li><a href="#">Webinar</a></li>
+				<li><a href="#careers">Career</a></li>
+				<li><img data-th-src="@{/images/flag.jpeg}" width="30"></a></li>
+			</ul>
+		</div>
+	</div>
+	<header style="top: 30px;">
+		<div class="top-menu-container">
+			<div class="logo-container">
+				<a data-th-href="@{/}">
+					<img data-th-src="@{/images/sts_logo.png}" width="1280" height="882" alt="STS TechSoft" id="logo"
+						data-height-percentage="80" data-actual-width="1280" data-actual-height="882">
+				</a>
+			</div>
+			<!--<div id="top-navigation" data-height="70" data-fixed-height="60" style="padding-left: 142px;">…</div>-->
+			<nav class="header-right" style="white-space: nowrap;">
+				<ul>
+					<li>
+						<div class="top-menu-dropdown">
+							<button class="top-menu-dropbtn">Company &#9660;</button>
+							<div class="top-menu-dropdown-content">
+								<a href="#about-us">About Us</a>
+								<a href="#life-at">Life at STS</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="top-menu-dropdown">
+							<button class="top-menu-dropbtn">Services &#9660;</button>
+							<div class="top-menu-dropdown-content">
+								<a href="#Services">Application Lifecycle Management</a>
+								<a href="#Services">DevOps</a>
+								<a href="#Services">Software and Systems Engineering</a>
+								<a href="#Services">IT Service Management</a>
+								<a href="#Services">Application Management Services</a>
+								<a href="#Services">QA and Testing</a>
+								<a href="#Services">Data Management</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="top-menu-dropdown">
+							<button class="top-menu-dropbtn">Products &#9660;</button>
+							<div class="top-menu-dropdown-content">
+								<a href="#">Average Boys</a>
+								<a href="#">Locally</a>
+								<a href="#">STS</a>
+							</div>
+						</div>
+					</li>
+					<li><button class="menu-button"><a style="color: #fff;" href="#contact-us">Contact Us</a></button>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-        <div class="ui info message" data-th-if="${param.logout}">
-            <p>You have been successfully logged out!</p>
-        </div>
+	<!--carousel -->
+	<div class="carousel-div">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="carousel-item-content">
+						<div>
+							<h1>Empowering Digital<br>Transformation for Enterprises<br>with Speed and Efficiency</h1>
+						</div>
+						<img class="" data-th-src="@{/images/slider01.jpg}" alt="Second slide">
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-item-content">
+						<div>
+							<h1>Deliver Complex Products<br>and Systems With Industry<br>Specific Systems
+								Engineering<br>Approach</h1>
+						</div>
+						<img class="" data-th-src="@{/images/complex-systems.jpeg}" alt="Second slide">
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-item-content">
+						<div>
+							<h1>Deliver High-Quality<br>Applications With Continuous<br>Quality Engineering</h1>
+						</div>
+						<img class="" data-th-src="@{/images/slider03.jpg}" alt="Second slide">
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-item-content">
+						<div>
+							<h1>Reimagine your organizations<br>Service Management strategy</h1>
+						</div>
+						<img class="" data-th-src="@{/images/slider02.jpg}" alt="Second slide">
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-item-content">
+						<div>
+							<h1>DevOps – Your Foundation<br>for Innovation and<br>Service Excellence</h1>
+						</div>
+						<img class="" data-th-src="@{/images/slider05.jpg}" alt="Second slide">
+					</div>
+				</div>
+			</div>
+			<!--<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>-->
+		</div>
+	</div>
+	<!--Mission -->
+	<div class="two-column-container-mission">
+		<div class="two-column-container-content">
+			<div></div>
+			<img class="col-3" data-th-src="@{/images/our-mission.jpg}" alt="Our Mission">
+			<div class="content-text-no-bg col-5">
+				<h1 style="color:#000">Our Mission</h1>
+				<p>To enable enterprises with reliable, scalable, integrated and easy to use <span
+						style="color: #994e78!important;">Digital Transformation
+						Solutions</span> that improves agility, quality and efficiency of their
+					business operations.</p>
+			</div>
+			<div class="col-0" id="Services"></div>
+		</div>
+	</div>
+	<!--Services -->
+	<div class="services">
+		<div class="center-text mx-auto col-11">
+			<h1>Services</h1>
+			<h1 style="color:#071f42!important">Providing Reliable Services Across All Stages of the Application
+				Lifecycle</h1>
+			<p>Our Application Management Service offers highly flexible onsite, offsite, offshore or blended delivery
+				model – from application maintenance and development to legacy modernization, keeping in mind
+				factors such as risk mitigation, location proximity, cost optimization and language capabilities.</p>
+		</div>
+		<div class="container card-columns">
+			<div class="card services-card">
+				<img class="card-img-top-services" data-th-src="@{/images/services/coding.png}"
+					alt="Application Development">
+				<div class="card-body">
+					<h5 class="card-title">Application Development</h5>
+					<hr class="services-hr">
+					<p class="card-text">Develop end-to-end custom application through ideation, architecture,
+						technology, design, development, and securing of on-premise, cloud, web, mobile and IoT
+						applications to power your business and support your customers.</p>
+				</div>
+			</div>
+			<div class="card services-card">
+				<img class="card-img-top-services" data-th-src="@{/images/services/full-stack.png}"
+					alt="Application Development">
+				<div class="card-body">
+					<h5 class="card-title">Full Stack Development</h5>
+					<hr class="services-hr">
+					<p class="card-text">Our team specializes in software development across a full range of
+						technologies, from front-end prototyping to a complete set of back-end services.</p>
+				</div>
+			</div>
+			<div class="card services-card">
+				<img class="card-img-top-services" data-th-src="@{/images/services/app-development.png}"
+					alt="Application Development">
+				<div class="card-body">
+					<h5 class="card-title">Mobile Application Development</h5>
+					<hr class="services-hr">
+					<p class="card-text">Create new revenue streams delivering rich customer experience to drive
+						competitive advantage with custom mobile app development for smartphones, PDAs, and tablets.</p>
+				</div>
+			</div>
+			<div class="card services-card">
+				<img class="card-img-top-services" data-th-src="@{/images/services/technology-1.png}"
+					alt="Application Development">
+				<div class="card-body">
+					<h5 class="card-title">Application Modernization</h5>
+					<hr class="services-hr">
+					<p class="card-text">Transform your legacy applications efficiently using DevOps approach into a
+						resilient, future-ready solutions by enhancing functionalities, web and mobile enablement and
+						UI/UX improvements.</p>
+				</div>
+			</div>
+			<div class="card services-card">
+				<img class="card-img-top-services" data-th-src="@{/images/services/migrating-ser3.png}"
+					alt="Application Development">
+				<div class="card-body">
+					<h5 class="card-title">Application Migration and Integration</h5>
+					<hr class="services-hr">
+					<p class="card-text">End-to-end integrations for mobile, desktop, and web apps, as well as
+						databases, search engines, and intranet systems to deliver faster, simpler, and more efficient
+						communication between your business, customers, and partners.</p>
+				</div>
+			</div>
+			<div class="card services-card">
+				<img class="card-img-top-services" data-th-src="@{/images/services/maintenance-1.png}"
+					alt="Application Development">
+				<div class="card-body">
+					<h5 class="card-title">Application Maintenance</h5>
+					<hr class="services-hr">
+					<p class="card-text">Designed to keep all applications performing at their best and includes
+						proactive monitoring, problem management, application upgrades, bug fixing, environment support
+						and performance tuning.</p>
+				</div>
+			</div>
+			<div class="card services-card">
+				<img class="card-img-top-services" data-th-src="@{/images/services/consulting-ser1.png}"
+					alt="Application Development">
+				<div class="card-body">
+					<h5 class="card-title">UI/UX Consulting</h5>
+					<hr class="services-hr">
+					<p class="card-text">Create functional, visually enhanced, intuitive, user-friendly, and
+						brand-centric designs. Include conceptualization, design, development, integration, site
+						optimization, cross-platform as well as device compatibility.</p>
+				</div>
+			</div>
+			<div class="card services-card">
+				<img class="card-img-top-services" data-th-src="@{/images/services/internet-of-things.png}"
+					alt="Application Development">
+				<div class="card-body">
+					<h5 class="card-title">IoT Development</h5>
+					<hr class="services-hr">
+					<p class="card-text">We offer a wide range of IoT software development services from middleware
+						engineering and IoT data pipeline architecture to building sleek and practical web and mobile
+						applications for the users of connected systems.</p>
+				</div>
+			</div>
+			<div class="card services-card">
+				<img class="card-img-top-services" data-th-src="@{/images/services/software.png}"
+					alt="Application Development">
+				<div class="card-body">
+					<h5 class="card-title">Embedded Software Development</h5>
+					<hr class="services-hr">
+					<p class="card-text">Our team holds collective experience working with a range of
+						platforms from the lowest 8-bit microcontrollers to the powerful 64-bit cores, including single
+						core/ multi – core microprocessor variants.</p>
+				</div>
+				<div id="about-us"></div>
+			</div>
+		</div>
+	</div>
 
 
-        <h2 class="ui dividing header">How to create this app.</h2>
+	<!--life at -->
+	<div class="two-column-container-about-us">
+		<div class="two-column-container-content secondary-bg">
+			<div></div>
+			<div class="content-text col-5">
+				<h1>Who We Are</h1><br>
+				<h3>Our Mission is to be the <span style="color:  #994e78!important;"> Trusted
+						Digital Transformation Partner</span> for enterprises needing agility, quality and
+					efficiency in business
+				</h3>
+				<p style="font-size: 1em;">Shiv Tech Soft is an adept and reliable technology solutions
+					provider focusing on Enterprise Digital Transformation for Software and Service Innovations and
+					Business Process Management applications. Since our inception in 2000, we have come a long way in
+					serving hundreds of clients across industries and geographies. Over the years, we have expanded our
+					portfolio and developed core competencies in Application Lifecycle Management, DevOps, Software and
+					Systems Engineering, Enterprise Content Management, Robotic Process Automation and Managed
+					Application
+					Services which includes Software Development, QA and Testing services.</p>
+			</div>
+			<img class="" data-th-src="@{/images/life-at.png}" alt="Our Mission">
+			<div>
+			</div>
+		</div>
+		<div id="life-at">
+		</div>
+	</div>
+	<!--culture -->
+	<div class="two-column-container-culture">
+		<div class="two-column-container-content">
+			<div class="content-text-no-bg col-5">
+				<h1 style="color:#000">Our Culture</h1>
+				<h3><span style="color:  #994e78!important;">Building teams</span> of
+					outstanding individuals <br>with diverse backgrounds and perspectives</h3>
+				<p style="font-size: 1em;">Shiv Tech Soft directs all its efforts towards becoming a leader in the
+					software <br>and services industry.
+					The work culture at Shiv Tech Soft is driven by a set of <br>core values that abides with the
+					organizations vision and its commitment <br>towards providing quality services to our clients across
+					the
+					globe. We always <br>motivate our employees to work as team to achieve goals and influence
+					<br>valuable
+					changes.
+				</p>
+			</div>
+			<img class="" data-th-src="@{/images/culture.png}" alt="Our Mission">
+			<div>
+			</div>
+		</div>
+	</div>
+	<div class="our-culture">
+		<div class="card-deck mx-auto col-11">
+			<div class="card culture-card">
+				<img class="card-img-top-culture" data-th-src="@{/images/culture/competence-1.png}"
+					alt="competence-1.png">
+				<div class="card-body">
+					<h5 class="card-title">Competency</h5>
+				</div>
+			</div>
+			<div class="card culture-card">
+				<img class="card-img-top-culture" data-th-src="@{/images/culture/creativity.png}" alt="creativity.png">
+				<div class="card-body">
+					<h5 class="card-title">Creativity</h5>
+				</div>
+			</div>
+			<div class="card culture-card">
+				<img class="card-img-top-culture" data-th-src="@{/images/culture/profession.png}" alt="profession.png">
+				<div class="card-body">
+					<h5 class="card-title">Professionalism</h5>
+				</div>
+			</div>
+			<div class="card culture-card">
+				<img class="card-img-top-culture" data-th-src="@{/images/culture/teamwork.png}" alt="teamwork.png">
+				<div class="card-body">
+					<h5 class="card-title">Teamwork</h5>
+				</div>
+			</div>
+			<div class="card culture-card">
+				<img class="card-img-top-culture" data-th-src="@{/images/culture/Communication.png}"
+					alt="Communication.png">
+				<div id="careers"></div>
+				<div class="card-body">
+					<h5 class="card-title">Communication</h5>
+				</div>
 
+			</div>
+		</div>
+	</div>
 
+	<div class="careers content-text secondary-bg">
+		<div class="center-text mx-auto col-11">
+			<br>
+			<h1>Why Join Shiv Tech Soft</h1><br>
+			<p>When you join the Shiv Tech Soft family, you join a network of professionals dedicated to enabling your
+				success — both inside and outside of the work environment. From helping you build your career and
+				rewarding your everyday achievements, to encouraging a healthy work-life balance, and influencing
+				valuable transformations.</p><br>
+		</div>
+		<div class="card-deck mx-auto col-11">
+			<div class="card ">
+				<div class="card-body">
+					<h6 class="card-title purple-text">Learn from Subject Matter Experts</h6>
+				</div>
+			</div>
+			<div class="card ">
+				<div class="card-body">
+					<h6 class="card-title purple-text">Opportunity to work with Global Clients</h6>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h6 class="card-title purple-text">Work with leading technology ecosystem</h6>
+				</div>
+			</div>
+			<div class="card ">
+				<div class="card-body">
+					<h6 class="card-title purple-text">Enhance your skills and Career opportunties</h6>
+				</div>
+			</div>
+			<div class="card ">
+				<div class="card-body">
+					<h6 class="card-title purple-text">Get rewarded for the results you bring</h6>
+				</div>
+			</div>
+			<div class="card ">
+				<div class="card-body">
+					<h6 class="card-title purple-text">Opportunity to unlock your true potential</h6>
+				</div>
+			</div>
+			
+		</div>
+		<div>
+		<div id="contact-us"></div>
+		</div>
+		<br><br>
+		<!--<form class="mx-auto col-11">
+			<div class="form-row">
+				<div class="form-group col-md-3">
+					<label for="input-name">Name</label>
+					<input type="text" class="form-control" id="input-name" required>
+					<div class="invalid-feedback">
+						Please enter your name.
+					</div>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="inputState">Email</label>
+					<input type="email" id="inputState" class="form-control" required>
+					<div class="invalid-feedback">
+						Please enter your email.
+					</div>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="inputZip">Phone</label>
+					<input type="number" class="form-control" id="inputZip" required>
+					<div class="invalid-feedback">
+						Please enter your phone.
+					</div>
+				</div>
+				<div class="form-group col-md-2">
+					<label for="exampleFormControlFile1">Resume</label>
+					<input type="file" class="form-control-file" id="exampleFormControlFile1" required>
+					<div class="invalid-feedback">
+						Please choose your CV.
+					</div>
+				</div>
+				<div class="col-auto">
+					<button type="submit" style="position: absolute;top: 36%;" class="menu-button mb-2">Submit</button>
+				</div>
+			</div>
+			<div id="contact-us"></div>
+		</form>
+		<br>-->
+		
+	</div>
 
-        <div class="ui link cards">
-            <div class="card">
-                <div class="image">
-                    <img src="/images/spring_social_2_cloud_part_3_oauth2.jpg">
-                </div>
-                <div class="content">
-                    <div class="header">OAuth2 sign in</div>
-                    <div class="meta">
-                        <a>part 3</a>
-                    </div>
-                    <div class="description">
-                        Sign in via google and github using Spring security oauth2 client support
-                    </div>
-                </div>
-                <div class="extra content">
-                    <div class="center aligned meta">
-                        <a href="https://youtu.be/40BxatEr5aE" target="_blank"><i class="ui youtube icon"></i></a>
-                    </div>
-                </div>
-            </div>
+	<div class="contact-us ">
+		<div class="center-text mx-auto col-11">
+			<h1>Important Email – ID’s</h1><br>
+			<div class="card-deck mx-auto col-11">
+				<div class="card culture-card">
+					<div class="card-body">
+						<h5 class="card-title">Placement Program</h5>
+						<a href="https://www.jotform.com/232774320923051" target="_blank">
+							<span>jot form</span>
+						</a>
+					</div>
+				</div>
+				<div class="card culture-card">
+					<div class="card-body">
+						<h5 class="card-title">Human Resources</h5>
+						<a href="mailto:career@shivtechsoft.in">
+							<span>career@shivtechsoft.in</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--locations -->
+	<div class="two-column-container-location">
+		<div class="two-column-container-content">
 
+			<img class="" data-th-src="@{/images/location.png}" alt="location.png">
+			<div class="content-text-no-bg col-5">
+				<h1 style="color:#000">Our Office</h1>
+				<div class="vertical-line">
+					<div class="card-body">
+						<h5 class="card-title">Bharat - <span class="purple-text">Pune</span></h5>
+						<p style="font-size: 1.25em;">3rd Floor, Prime Business Bay, opp. Croma, Veerbhadra Nagar,
+							Baner, Pune - 411045,
+							<br>Maharashtra
+							<br>Phone: +91-7744007898/ +91-9916194392
+							<br>Email: career@shivtechsoft.in
+						</p>
+					</div>
+				</div>
+			</div>
 
-            <div class="card">
-                <div class="image">
-                    <img src="/images/spring_social_2_cloud_part_2_security_overview.jpg">
-                </div>
-                <div class="content">
-                    <div class="header">Spring security overview</div>
-                    <div class="meta">
-                        <a>part 2</a>
-                    </div>
-                    <div class="description">
-                        Overview of spring security architecture for spring mvc web apps
-                    </div>
-                </div>
-                <div class="extra content">
-                    <div class="center aligned meta">
-                        <a href="https://youtu.be/vQ2B3qAWuAU" target="_blank"><i class="ui youtube icon"></i></a>
-                    </div>
-                </div>
-            </div>
+		</div>
+	</div>
 
-            <div class="card">
-                <div class="image">
-                    <img src="/images/spring_social_2_cloud_part_1.jpg">
-                </div>
-                <div class="content">
-                    <div class="header">Deploying spring apps to cloud</div>
-                    <div class="meta">
-                        <a>part 1</a>
-                    </div>
-                    <div class="description">
-                        Deploying spring web apps to railway.app cloud provider
-                    </div>
-                </div>
-                <div class="extra content">
-                    <div class="center aligned meta">
-                        <a href="https://youtu.be/40BxatEr5aE" target="_blank"><i class="ui youtube icon"></i></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</div>
 </body>
+<!-- Footer -->
+<footer class="text-center text-lg-start text-white" style="background-color: #0d1f68">
+	<!-- Grid container -->
+	<div class="container p-4 pb-0">
+		<!-- Section: Links -->
+		<section class="">
+			<!--Grid row-->
+			<div class="row">
+				<!--Grid column-->
+				<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+					<img data-th-src="@{/images/sts_logo.png}" style="width: 125px;"><br>
+					<h5>Shiv Tech Soft</h5>
+
+					<p>
+						Orchestrating Technology to Deliver Solutions
+					</p>
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-left">
+					<h5 class="text-uppercase">Services</h5>
+
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="#Services" class="text-white">Application Lifecycle Management</a>
+						</li>
+						<li>
+							<a href="#Services" class="text-white">Software and Systems Engineering</a>
+						</li>
+						<li>
+							<a href="#Services" class="text-white">DevOps</a>
+						</li>
+						<li>
+							<a href="#Services" class="text-white">IT service management</a>
+						</li>
+						<li>
+							<a href="#Services" class="text-white">Application Management Services</a>
+						</li>
+						<li>
+							<a href="#Services" class="text-white">QA & Testing</a>
+						</li>
+						<li>
+							<a href="#Services" class="text-white">Data Management</a>
+						</li>
+					</ul>
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-left">
+					<h5 class="text-uppercase">Company</h5>
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="#about-us" class="text-white">About Us</a>
+						</li>
+						<li>
+							<a href="#life-at" class="text-white">Life at STS</a>
+						</li>
+						<li>
+							<a href="#careers" class="text-white">Career</a>
+						</li>
+						<li>
+							<a href="#contact-us" class="text-white">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-left">
+					<h5 class="text-uppercase">Resources</h5>
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="#" class="text-white">Blogs</a>
+						</li>
+						<li>
+							<a href="#" class="text-white">Case Studies</a>
+						</li>
+						<li>
+							<a href="#" class="text-white">News/PR</a>
+						</li>
+						<li>
+							<a href="#" class="text-white">Webinars</a>
+						</li>
+					</ul>
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<!--<div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-left">
+					<h5 class="text-uppercase">Links</h5>
+
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="#!" class="text-white">Link 1</a>
+						</li>
+						<li>
+							<a href="#!" class="text-white">Link 2</a>
+						</li>
+						<li>
+							<a href="#!" class="text-white">Link 3</a>
+						</li>
+						<li>
+							<a href="#!" class="text-white">Link 4</a>
+						</li>
+					</ul>
+				</div>-->
+				<!--Grid column-->
+			</div>
+			<!--Grid row-->
+		</section>
+		<!-- Section: Links -->
+
+		<hr class="mb-4" />
+
+		<!-- Section: CTA -->
+		<!--<section class="">
+        <p class="d-flex justify-content-center align-items-center">
+          <span class="me-3">Register for free</span>
+          <button type="button" class="btn btn-outline-light btn-rounded">
+            Sign up!
+          </button>
+        </p>
+      </section>
+      <hr class="mb-4" />-->
+		<!-- Section: CTA -->
+
+
+
+		<!-- Section: Social media -->
+		<section class="mb-4 text-center">
+			<!-- Facebook -->
+			<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
+					viewBox="0 0 16 16">
+					<path
+						d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+				</svg>
+			</a>
+
+			<!-- Twitter -->
+			<a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=61552912137010" target="_blank" role="button"><svg
+					xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+					viewBox="0 0 16 16">
+					<path
+						d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+				</svg></a>
+
+			<!-- Google -->
+			<a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/shivtechsoft-bharat-46a52829a/" target="_blank" role="button"><svg
+					xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+					viewBox="0 0 16 16">
+					<path
+						d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+				</svg></a>
+
+			<!-- Instagram -->
+			<a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/shivtechsoft" target="_blank"  role="button"><svg
+					xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+					class="bi bi-instagram" viewBox="0 0 16 16">
+					<path
+						d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+				</svg></a>
+
+			<!-- Linkedin -->
+			<a class="btn btn-outline-light btn-floating m-1" href="mailto:career@shivtechsoft.in" role="button"><svg
+					xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google"
+					viewBox="0 0 16 16">
+					<path
+						d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+				</svg></a>
+
+			<!-- Github -->
+			<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><svg
+					xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+					viewBox="0 0 16 16">
+					<path
+						d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+				</svg></a>
+		</section>
+		<!-- Section: Social media -->
+	</div>
+	<!-- Grid container -->
+
+	<!-- Copyright -->
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+		© 2023 Shiv Tech Soft Bharat Pvt Ltd. All Rights Reserved.
+	</div>
+	<!-- Copyright -->
+</footer>
+
 </html>

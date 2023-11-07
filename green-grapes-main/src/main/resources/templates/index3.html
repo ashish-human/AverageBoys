@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<link rel="stylesheet" type="text/css" media="all" data-th-href="@{/app.css}" />
+	<link rel="stylesheet" type="text/css" media="all" data-th-href="@{/css/home.css}" />
+	<link rel="stylesheet" type="text/css" media="all" data-th-href="@{/lib/bootstrap.min.css}" crossorigin="anonymous" />
+	<script data-th-src="@{/lib/jquery.min.js}" crossorigin="anonymous"></script>
+	<script data-th-src="@{/lib/bootstrap.min.js}" crossorigin="anonymous"></script>
+	<script data-th-src="@{/lib/flickity.pkgd.min.js}" crossorigin="anonymous"></script>
+	<title>Shiv Tech Soft</title>
+</head>
+
+<body>
+	<div class="top-secondary-header">
+		<div class="top-secondary-menu">
+			<ul class="top-secondary-nav">
+				<li><a href="#">Blogs</a></li>
+				<li><a href="#">Webinar</a></li>
+				<li><a href="#">Career</a></li>
+				<li><img data-th-src="@{/images/flag.jpeg}" width="30"></a></li>
+			</ul>
+		</div>
+	</div>
+	<header style="top: 30px;">
+		<div class="top-menu-container">
+			<div class="logo-container">
+				<a data-th-href="@{/}">
+					<img data-th-src="@{/images/sts_logo.png}" width="1280" height="882" alt="MicroGenesis TechSoft"
+						id="logo" data-height-percentage="80" data-actual-width="1280" data-actual-height="882">
+				</a>
+			</div>
+			<!--<div id="top-navigation" data-height="70" data-fixed-height="60" style="padding-left: 142px;">…</div>-->
+			<nav class="header-right" style="white-space: nowrap;">
+				<ul>
+					<li>
+						<div class="top-menu-dropdown">
+						  <button class="top-menu-dropbtn">Company &#9660;</button>
+						  <div class="top-menu-dropdown-content">
+						    <a href="#">About Us</a>
+						    <a href="#">Life at STS</a>
+						  </div>
+						</div>
+					</li>
+					<li>
+						<div class="top-menu-dropdown">
+						  <button class="top-menu-dropbtn">Services &#9660;</button>
+						  <div class="top-menu-dropdown-content">
+						    <a href="#">Application Lifecycle Management</a>
+						    <a href="#">DevOps</a>
+						    <a href="#">Software and Systems Engineering</a>
+						    <a href="#">IT Service Management</a>
+						    <a href="#">Application Management Services</a>
+						    <a href="#">QA and Testing</a>
+						    <a href="#">Data Management</a>
+						  </div>
+						</div>
+					</li>
+					<li>
+						<div class="top-menu-dropdown">
+						  <button class="top-menu-dropbtn">Products &#9660;</button>
+						  <div class="top-menu-dropdown-content">
+						    <a href="#">xxx-xxx</a>
+						    <a href="#">xxx-xxx</a>
+						  </div>
+						</div>
+					</li>
+					<li><button href="#" class="menu-button">Contact Us</button></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+<!--carousel -->
+	<div class="carousel-div">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		    <ol class="carousel-indicators">
+		        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+		    </ol>
+		    <div class="carousel-inner">
+		        <div class="carousel-item active">
+		            <div class="carousel-item-content">
+						<img class="" data-th-src="@{/images/slider01.jpg}" alt="Second slide">
+		                <div>
+		                	<h1>Empowering Digital<br>Transformation for Enterprises<br>with Speed and Efficiency</h1>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="carousel-item">
+		            <div class="carousel-item-content">
+			            <img class="" data-th-src="@{/images/complex-systems.jpeg}" alt="Second slide">
+						<div>
+		                	<h1>Deliver Complex Products<br>and Systems With Industry<br>Specific Systems Engineering<br>Approach</h1>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="carousel-item">
+		           <div class="carousel-item-content">
+			           <img class="" data-th-src="@{/images/slider03.jpg}" alt="Second slide">
+		               <div>
+		                	<h1>Deliver High-Quality<br>Applications With Continuous<br>Quality Engineering</h1>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="carousel-item">
+		           <div class="carousel-item-content">
+			           <img class="" data-th-src="@{/images/slider02.jpg}" alt="Second slide">
+		               <div>
+		                	<h1>Reimagine your organizations<br>Service Management strategy</h1>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="carousel-item">
+		           <div class="carousel-item-content">
+			           <img class="" data-th-src="@{/images/slider05.jpg}" alt="Second slide">
+		               <div>
+		                	<h1>DevOps – Your Foundation<br>for Innovation and<br>Service Excellence</h1>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		        <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		        <span class="sr-only">Next</span>
+		    </a>
+		</div>
+	</div>
+<!--Mission -->
+	<div class="two-column-container">
+        <img class="element" data-th-src="@{/images/our-mission.jpg}" alt="Our Mission">
+        <div class="element two-column-content">
+           <h1>Our Mission</h1>
+           <p>To enable enterprises with reliable, scalable, integrated and easy to use Digital Transformation Solutions that improves agility, quality and efficiency of their business operations.</p>
+        </div>
+    </div>
+</body>
+<footer>
+
+</footer>
+
+</html>
