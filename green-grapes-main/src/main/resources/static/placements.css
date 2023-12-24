@@ -1,0 +1,407 @@
+:root {
+	 --blue-bg-color:#002779;
+	 --light-blue-bg-color:#1a3d87;
+	 --lighter-blue-color:#17a2b8;
+	 --cyan-color: #5b9bd5;
+	 --blue-shadow-color: #002779;
+	 --blue-cyan-color: #00a2e8;
+	 --magenta-color: #a768d7;
+	 --light-green-color: #5cdb57;
+	 --light-pink-color:#ea576f;
+}
+.page-nav {
+	height:80px;
+}
+a, a:hover {
+	color:black;
+}
+/*.top-secondary-header {
+	padding: 0.4em 0;
+	z-index: 4;
+}*/
+.loading-section {
+	background-color: rgb(23, 162, 184);
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.loading-text{
+	font-size:10rem;
+	top: 30%; 
+	position: relative;
+	background: -webkit-linear-gradient(#ff772200, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.two-column-container-content{
+	padding: 20px 0;
+	background-color: var(--blue-bg-color);
+}
+.two-column-container-content img {
+	height: auto;
+}
+
+.two-column-container-content p
+{
+	font-size: 1.5em;
+}
+
+.blue-bg {
+	background-color: var(--blue-bg-color);
+}
+.purple-bg {
+	background-color: var(--purple-light-color);
+}
+.shadow-margin {
+	-webkit-box-shadow: 0px 0px 5px 5px var(--blue-shadow-color);
+	-moz-box-shadow: 0px 0px 5px 5px var(--blue-shadow-color);
+	box-shadow: 0px 0px 5px 5px var(--blue-shadow-color);
+	margin: 0 20px;;
+}
+
+.menu-button {
+	/*border-radius: 10px;*/
+	font-weight: 800;
+}
+footer {
+    top: 200px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*slider2*/
+.course-slider-2{
+	margin: 0;
+	background:  var(--cyan-color);
+	color: white;
+	font-family: sans-serif;;
+	align-items: center;
+	padding: 30px;
+}
+.slider{width: 100%}
+.slider input{display: none;}
+.testimonials{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 520px;
+	perspective: 1000px;
+	overflow: hidden;
+}
+.testimonials .item{
+	width: 300px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: var(--cyan-color);
+	position: absolute;
+	border:3px solid white;
+	top: 0;
+	box-sizing: border-box;
+	text-align: center;
+	transition: transform 0.4s;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	user-select: none;
+	cursor: pointer;
+	min-height: 425px;
+}
+.testimonials .card {
+	background-color: var(--cyan-color);
+	border:none;
+}
+.testimonials .item h1{font-size: 114px; color: white;}
+.dots{display: flex; justify-content: center;align-items: center;}
+.dots label{
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: rgb(255, 255, 0);
+	margin: 7px;
+	transition-duration: 0.2s;
+}
+#t-1:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-4"],
+#t-5:checked ~ .dots label[for="t-5"]{
+	transform: scale(2);
+	background-color: #fff;
+	box-shadow: 0px 0px 0px 3px #9fc2133d;
+}
+
+#t-1:checked ~ .dots label[for="t-2"],
+#t-2:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-3"],
+#t-3:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-4"],
+#t-4:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-5"],
+#t-5:checked ~ .dots label[for="t-4"]{
+	transform: scale(1.5);
+}
+
+#t-1:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-4"],
+#t-3:checked ~ .testimonials label[for="t-5"],
+#t-4:checked ~ .testimonials label[for="t-1"],
+#t-5:checked ~ .testimonials label[for="t-2"]{
+	transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+	z-index: 2;
+}
+
+#t-1:checked ~ .testimonials label[for="t-2"],
+#t-2:checked ~ .testimonials label[for="t-3"],
+#t-3:checked ~ .testimonials label[for="t-4"],
+#t-4:checked ~ .testimonials label[for="t-5"],
+#t-5:checked ~ .testimonials label[for="t-1"]{
+	transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+	z-index: 3;
+}
+
+#t-2:checked ~ .testimonials label[for="t-1"],
+#t-3:checked ~ .testimonials label[for="t-2"],
+#t-4:checked ~ .testimonials label[for="t-3"],
+#t-5:checked ~ .testimonials label[for="t-4"],
+#t-1:checked ~ .testimonials label[for="t-5"]{
+	transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+	z-index: 3;
+}
+
+#t-3:checked ~ .testimonials label[for="t-1"],
+#t-4:checked ~ .testimonials label[for="t-2"],
+#t-5:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-5"],
+#t-1:checked ~ .testimonials label[for="t-4"]{
+	transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+	
+}
+
+#t-1:checked ~ .testimonials label[for="t-1"],
+#t-2:checked ~ .testimonials label[for="t-2"],
+#t-3:checked ~ .testimonials label[for="t-3"],
+#t-4:checked ~ .testimonials label[for="t-4"],
+#t-5:checked ~ .testimonials label[for="t-4"],
+#t-5:checked ~ .testimonials label[for="t-5"]{
+	
+	z-index: 4;
+}
+/*slider2*/
+
+.card img{
+}
+
+.card-header{
+	background: none;
+    border: none;
+    font-size: xx-large;
+    font-weight: 900;
+}
+.card-title{
+	font-weight: 900;
+}
+.card-header::before{
+	 color:brown;
+}
+.card-text::first-letter{
+   /*color: red;*/
+}
+.body-padding {
+	padding: 4rem 8rem 0 8rem;
+}
+.body-padding-xy {
+	padding: 4rem 8rem;
+}
+
+.body-padding-x {
+	padding: 4rem 0rem;
+}
+.column-container {
+	background: #002779;
+	background-image: url(/images/placements/general/sloped_blue_bg.png);
+	background-repeat: no-repeat;
+	height:min-content;
+}
+
+.intro-section{
+	align-items: flex-start;
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: center;
+}
+.plus {
+	font-size: large;
+    font-weight: 900;
+    color:#ffd201
+}
+.yellow-text {
+	color:#ffd201
+}
+.big-text {
+	 font-size: xxx-large;
+    
+}
+.medium-large-text {
+	font-size: 2em;
+}
+.medium-text {
+	font-size: 1.25em;
+}
+.small-text {
+	font-size: small;
+}
+.bold-text {
+	font-weight: 700;
+}
+.bolder-text {
+	font-weight: 900;
+}
+.light-blue-box {
+	padding: 5px 10px;
+	background-color: var( --light-blue-bg-color);
+	border-radius:7px;
+	
+}
+.blue-light-bg {
+	background-color: var( --blue-cyan-color);
+}
+.cyan-bg {
+	background-color: var(--cyan-color);
+}
+.yellow-bg {
+	background-color: #fca733;
+}
+.magenta-bg {
+	background-color: var(--magenta-color);
+}
+.lighter-blue-bg {
+	background-color: var(--lighter-blue-color);
+}
+.light-green-bg {
+	background-color: var( --light-green-color);
+}
+.intro-card-img{
+	width: 25%;
+}
+.program-card-img {
+    width: max-content;
+    align-self: center;
+}
+.small-space {
+	margin-left: 30px;
+}
+.section-space {
+	margin-top:50px
+}
+
+.box-shadow-bottom {
+	box-shadow: 0 8px 6px -6px #02102829;
+}
+shrink-img{
+  height:0;
+  min-height:100%;
+}
+
+.white-box {
+	background: #ffffff;
+    border-radius: 0.75rem;
+    -webkit-box-shadow: 0 0.8rem 3.2rem 0 rgba(2,16,40,0.16);
+    box-shadow: 0 0.8rem 3.2rem 0 rgba(2,16,40,0.16);
+}
+ .card-columns .card {
+	height: fit-content;
+	padding-top: 20px;
+	min-height: 245px;
+}
+.highlight {
+	display: inline-block;
+    height: inherit;
+    background-image: url(/images/placements/general/highlight.png);
+    background-position: 0 2.56rem;
+    background-repeat: repeat-x;
+}
+.highlight-white {
+	display: inline-block;
+    height: inherit;
+    background-image: url(/images/placements/general/highlight-white.png);
+    background-position: 0 1.56rem;
+    background-repeat: repeat-x;
+}
+.big-text .highlight-white {
+	 background-position: 0 2.56rem;
+	}
+.flex-cards {
+	flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.flex-card {
+	flex-basis: 30%;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    margin: 1rem;
+    border-radius: 7px;
+    border: 1px solid #007bff!important;
+}
+
+.courses-btn button {
+	margin:10px;
+}
+
+
+.vl {
+  border-left: 6px solid var(--blue-cyan-color);
+  height: 100%;
+}
+.vl-primary {
+  border-right: 6px solid var(--primary-color);
+  height: 100%;
+}
+
+
+
+.course-details-section ul {
+  list-style-image: url(/images/placements/general/double-ticks2.png);;
+}
+
+.round-circle{
+    border-radius: 50%;
+}
+/*img {
+  max-width: 100%;
+  max-height: 100%;
+  /*display: block;
+}*/
+/*Hex*/
+.hex1::before {
+  content: "\2B22";
+  color: orange;
+  font-size:135px;
+}
+
+.hex2::before {
+  content: "\2B22";
+  display:block;
+  color: magenta;
+  font-size:135px;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}

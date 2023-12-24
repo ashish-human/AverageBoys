@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width=1050">
+	<meta name="viewport" content="width=1060">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 
@@ -73,6 +73,15 @@
 							</div>
 						</div>
 					</li>
+					<li>
+						<div class="top-menu-dropdown">
+							<button class="top-menu-dropbtn purple-text">Placements &#9660;</button>
+							<div class="top-menu-dropdown-content">
+								<a href="#about-us" data-th-href="@{placements/}" target="_blank">Placement Program</a>
+								<a href="#life-at" data-th-href="@{placements/#page-courses}" target="_blank">Courses</a>
+							</div>
+						</div>
+					</li>
 					<li><button class="menu-button"><a style="color: #fff;" href="#contact-us">Contact Us</a></button>
 					</li>
 				</ul>
@@ -93,7 +102,7 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="carousel-item-content">
-						<div>
+						<div class="p-4">
 							<h1>Empowering Digital<br>Transformation for Enterprises<br>with Speed and Efficiency</h1>
 						</div>
 						<img class="" data-th-src="@{/images/slider01.jpg}" alt="Second slide">
@@ -101,7 +110,7 @@
 				</div>
 				<div class="carousel-item">
 					<div class="carousel-item-content">
-						<div>
+						<div class="p-4">
 							<h1>Deliver Complex Products<br>and Systems With Industry<br>Specific Systems
 								Engineering<br>Approach</h1>
 						</div>
@@ -110,7 +119,7 @@
 				</div>
 				<div class="carousel-item">
 					<div class="carousel-item-content">
-						<div>
+						<div class="p-4">
 							<h1>Deliver High-Quality<br>Applications With Continuous<br>Quality Engineering</h1>
 						</div>
 						<img class="" data-th-src="@{/images/slider03.jpg}" alt="Second slide">
@@ -118,7 +127,7 @@
 				</div>
 				<div class="carousel-item">
 					<div class="carousel-item-content">
-						<div>
+						<div class="p-4">
 							<h1>Reimagine your organizations<br>Service Management strategy</h1>
 						</div>
 						<img class="" data-th-src="@{/images/slider02.jpg}" alt="Second slide">
@@ -126,7 +135,7 @@
 				</div>
 				<div class="carousel-item">
 					<div class="carousel-item-content">
-						<div>
+						<div class="p-4">
 							<h1>DevOps – Your Foundation<br>for Innovation and<br>Service Excellence</h1>
 						</div>
 						<img class="" data-th-src="@{/images/slider05.jpg}" alt="Second slide">
@@ -357,7 +366,7 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- careers-->
 	<div class="careers content-text secondary-bg">
 		<div class="center-text mx-auto col-11">
 			<br>
@@ -399,11 +408,17 @@
 				</div>
 			</div>
 			
+		</div><br><br>
+		<div class="d-flex align-items-center justify-content-center">
+			<h4 class="box-text">Write us at <a href="mailto:career@shivtechsoft.in">
+							<span class="purple-text" style="font-weight: bolder;">career@shivtechsoft.in</span>
+						</a></h4>
+		
 		</div>
 		<div>
 		<div id="contact-us"></div>
 		</div>
-		<br><br>
+		<br>
 		<!--<form class="mx-auto col-11">
 			<div class="form-row">
 				<div class="form-group col-md-3">
@@ -469,10 +484,12 @@
 	</div>
 	<!--locations -->
 	<div class="two-column-container-location">
-		<div class="two-column-container-content">
-
-			<img class="" data-th-src="@{/images/location.png}" alt="location.png">
-			<div class="content-text-no-bg col-5">
+		<div class="row justify-content-center p-4">
+		
+			<div class="col-4">
+				<img class="" data-th-src="@{/images/location.png}" alt="location.png">
+			</div>
+			<div class="content-text-no-bg col-4">
 				<h1 style="color:#000">Our Office</h1>
 				<div class="vertical-line">
 					<div class="card-body">
@@ -480,8 +497,9 @@
 						<p style="font-size: 1.25em;">3rd Floor, Prime Business Bay, opp. Croma, Veerbhadra Nagar,
 							Baner, Pune - 411045,
 							<br>Maharashtra
-							<br>Phone: +91-7744007898/ +91-9916194392
-							<br>Email: career@shivtechsoft.in
+							<br><img data-th-src="@{/images/contact/call.png}" style="width: 7%;"> +91 94722 11448 / +91-77440 07898
+							<br><img data-th-src="@{/images/contact/email.png}" style="width: 7%;"> career@shivtechsoft.in
+							<br><img data-th-src="@{/images/contact/web.png}" style="width: 7%;"> www.shivtechsoft.in
 						</p>
 					</div>
 				</div>
@@ -677,7 +695,7 @@
 	<!-- Grid container -->
 
 	<!-- Copyright -->
-	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+	<div class="text-center p-3" style="background-color:rgba(0,0,58,0.99)!important">
 		© 2023 Shiv Tech Soft Bharat Pvt Ltd. All Rights Reserved.
 	</div>
 	<!-- Copyright -->

@@ -12,6 +12,11 @@ public class HomeController {
     public String home(@RequestParam(name = "logout", required = false, defaultValue = "true") boolean logout) {
         return "index";
     }
+    
+    @GetMapping(path = {"/placements", "/placements/"})
+    public String placements(@RequestParam(name = "logout", required = false, defaultValue = "true") boolean logout) {
+        return "placements";
+    }
 
     @GetMapping("/login")
     String login() {

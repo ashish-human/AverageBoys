@@ -1,5 +1,5 @@
 body {
-	color: rgb(153 78 120)!important;
+	/*color: rgb(153 78 120)!important;*/
 	font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
 }
    
@@ -16,7 +16,10 @@ img {
 	color: var(--white);
 }
 .purple-text {
-	color: #8f0050;
+	color:var(--purple-deep-color)
+}
+.purple-text-light {
+	color:var(--purple-light-color);
 }
 .main-container {
 	display: inline-block;
@@ -132,7 +135,7 @@ logo-container {
         margin: 10px 0;
     }
 }
-a, abbr, acronym, address, applet, b, big, blockquote, body, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, u, ul, var {
+a, abbr, acronym, address, applet, b, big, blockquote, center, cite, code, dd, del, dfn, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, u, ul, var {
     margin: 0;
     padding: 0;
     border: 0;
@@ -338,15 +341,23 @@ a, a:hover {
 
 .vertical-line {
 	border-left: 6px solid var( --primary-color);
-  	height: 203px;
+  	height: 80%;
 }
 footer {
 	background-color: #0d1f68;
-    height: 500px;
     position: relative;
     top: 1200px;
 }
 .white-text {
 	color: var(--white);
+}
+.box-text{
+	background: white;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-start-end-radius: 25px;
+    border-end-end-radius: 25px;
+    /* border-end-start-radius: 25px; */
+    border-start-start-radius: 25px
 }
 /* #about-us, #life-at, #Services {}*/

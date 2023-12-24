@@ -21,9 +21,31 @@ jQuery(function($){
 	    } 
 	  });
 	}
+	
+	function rotate() {
+	let lastChild = $('.slider div:last-child').clone();
+	$('.slider div').removeClass('firstSlide');
+	$('.slider div:last-child').remove();
+	$('.slider').prepend(lastChild);
+	$(lastChild).addClass('firstSlide')
+}
+
+window.setInterval(function(){
+	console.log('interval')
+},4000);
 });
 
+function rotate() {
+	let lastChild = $('.slider div:last-child').clone();
+	$('.slider div').removeClass('firstSlide');
+	$('.slider div:last-child').remove();
+	$('.slider').prepend(lastChild);
+	$(lastChild).addClass('firstSlide')
+}
 
+window.setInterval(function(){
+	console.log('interval')
+},4000);
 
 
 const gotoCourseDetailPage = () => {
