@@ -16,8 +16,7 @@ $('.card-text').each(function() {
 	$(this).html($(this).html().replace(/(\+)/g, '<span style="color: #bb60d5;">+</span>'));
 });
 
-$( window ).on( "load", function() {
+$( window ).on("load", function() {
 	$('#loading-section').hide();
 }
 )
-
